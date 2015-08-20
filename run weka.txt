@@ -1,0 +1,2 @@
+java -Xmx1000M -jar weka.jar
+export PATH=/path/to/dir:$PATH
