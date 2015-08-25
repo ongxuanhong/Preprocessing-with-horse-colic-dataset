@@ -1,3 +1,5 @@
+Dữ liệu trong thực tế có chất lượng xấu (dữ liệu bị thiếu và không đầy đủ). Sau các bước làm sạch dữ liệu và rút gọn dữ liệu, ta có thể tiến hành khai thác dữ liệu ở những bước sau này.
+
 # Phân tích sơ khởi
 * Dữ liệu có 300 mẫu
 * Dữ liệu có 28 thuộc tính
