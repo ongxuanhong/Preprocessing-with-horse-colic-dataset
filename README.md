@@ -1,13 +1,13 @@
-Dữ liệu trong thực tế có chất lượng xấu (dữ liệu bị thiếu và không đầy đủ). Sau các bước làm sạch dữ liệu và rút gọn dữ liệu, ta có thể tiến hành khai thác dữ liệu ở những bước sau này.
+In practice, data quality is bad (missing and incomplete). After cleansing and transforming dataset, we can conduct data mining.
 
-# Phân tích sơ khởi
-* Dữ liệu có 300 mẫu
-* Dữ liệu có 28 thuộc tính
-* Thông tin các thuộc tính nằm trong file attribute.csv
+# Exploratory analysis
+* Number of instances: 300
+* Number of attributes: 28
+* Attribute information: attribute.csv
 
-# Rời rạc hóa các thuộc tính và điền giá trị cho các ô bị thiếu dữ liệu
-Sử dụng bộ lọc của  Weka Unsupervised/Attribute
-* Normalize: chuẩn hóa các thuộc tính về đoạn 0,1
-* ReplaceMissingValue: thay thế tất cả các giá trị thiếu cho các thuộc tính dạng nomial và numeric trong tập dữ liệu  với giá trị mode và mean từ tập huấn luyện
-* Discretize: là bộ lọc dùng để rời rạc hóa một loạt các thuộc tính numeric trong tập dữ liệu thành các thuộc tính nomial. Việc rời rạc đơn giản chia giỏ (binning)  sau đó gán các giá trị numeric tương ứng vào từng giỏ đó.
-* NumericToNominal: là bộ lọc dùng để chuyển các thuộc tính dạng numeric thành nomial. Không như discretization (rời rạc hóa), bộ lọc này lấy tất cả các giá trị numeric gán vào danh sách các giá trị nomial của thuộc tính đó.
+# Discretize and replace missing value
+Using Weka filter Unsupervised/Attribute
+* Normalize: Normalizes all numeric values in the given dataset (apart from the class attribute, if set). The resulting values are by default in [0,1] for the data used to compute the normalization intervals. But with the scale and translation parameters one can change that, e.g., with scale = 2.0 and translation = -1.0 you get values in the range [-1,+1].
+* ReplaceMissingValue: Replaces all missing values for nominal and numeric attributes in a dataset with the modes and means from the training data.
+* Discretize: An instance filter that discretizes a range of numeric attributes in the dataset into nominal attributes. Discretization is by simple binning. Skips the class attribute if set.
+* NumericToNominal: A filter for turning numeric attributes into nominal ones. Unlike discretization, it just takes all numeric values and adds them to the list of nominal values of that attribute. Useful after CSV imports, to enforce certain attributes to become nominal, e.g., the class attribute, containing values from 1 to 5.
