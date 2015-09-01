@@ -4,9 +4,11 @@ In practice, data quality is bad (missing and incomplete). After cleansing and t
 Blog: https://ongxuanhong.wordpress.com/2015/08/20/tien-xu-ly-du-lieu-horse-colic-dataset/
 
 # Exploratory analysis
+![Exploratory analysis](https://ongxuanhong.files.wordpress.com/2015/08/weka-first-look-data.png)
 * Number of instances: 300
 * Number of attributes: 28
 * Attribute information: attribute.csv
+![Attribute information](https://ongxuanhong.files.wordpress.com/2015/08/horse-colic-csv.png)
 
 # Discretize and replace missing value
 Using Weka filter Unsupervised/Attribute
