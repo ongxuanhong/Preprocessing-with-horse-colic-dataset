@@ -1,6 +1,8 @@
 # Introduction
 In practice, data quality is bad (missing and incomplete). After cleansing and transforming dataset, we can conduct data mining.
 
+Blog: https://ongxuanhong.wordpress.com/2015/08/20/tien-xu-ly-du-lieu-horse-colic-dataset/
+
 # Exploratory analysis
 * Number of instances: 300
 * Number of attributes: 28
