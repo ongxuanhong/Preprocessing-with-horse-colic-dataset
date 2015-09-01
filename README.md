@@ -1,3 +1,4 @@
+# Introduction
 In practice, data quality is bad (missing and incomplete). After cleansing and transforming dataset, we can conduct data mining.
 
 # Exploratory analysis
